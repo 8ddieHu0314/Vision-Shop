@@ -22,8 +22,6 @@ def main():
 
     uploaded_image = st.file_uploader(label="Upload/Update Image", type=["png", "jpg", "jpeg"])
 
-    #temp_path = "temp_uploaded_image.jpg"
-
     # Store uploaded image into the image list
     if uploaded_image is not None:
         st.image(uploaded_image, use_container_width=True)
